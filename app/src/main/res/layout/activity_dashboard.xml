@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRowBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/txa"
+                android:text=""
+                android:padding="2dp">
+            </TextView>
+            <Button
+                android:id="@+id/btn_grafik"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/password_icon"
+                android:text="Grafik"
+                android:textStyle="bold"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                />
+            <TextView
+                android:id="@+id/txb"
+                android:text=""
+                android:padding="2dp">
+            </TextView>
+            <Button
+                android:id="@+id/btnLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/username_icon"
+                android:text="Lokasi"
+                android:textStyle="bold"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp" />
+            <TextView
+                android:id="@+id/txc"
+                android:text=""
+                android:padding="2dp">
+            </TextView>
+            <Button
+                android:id="@+id/btnLike"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/user_icon"
+                android:text="Like"
+                android:textStyle="bold"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                />
+            <TextView
+                android:id="@+id/txd"
+                android:text=""
+                android:padding="2dp">
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>
